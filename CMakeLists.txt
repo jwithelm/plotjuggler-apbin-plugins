@@ -44,7 +44,7 @@ if( CATKIN_DEVEL_PREFIX OR catkin_FOUND OR CATKIN_BUILD_BINARY_PACKAGE)
         CATKIN_DEPENDS plotjuggler
         )
     include_directories(${catkin_INCLUDE_DIRS})
-    list(APPEND ${PJ_LIBRARIES} ${catkin_LIBRARIES} )
+    list(APPEND PJ_LIBRARIES ${catkin_LIBRARIES} )
     set(PJ_PLUGIN_INSTALL_DIRECTORY ${CATKIN_PACKAGE_BIN_DESTINATION} )
 
     #--------------------------------------------------------
